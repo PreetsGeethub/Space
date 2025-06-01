@@ -49,7 +49,7 @@
     audio {
       display: none;
     }
-    @media (max-width: 600px){
+    @media (max-width: 1400px){
       #transmission {
       white-space: pre-wrap;
       font-size: 1.5rem;
@@ -89,6 +89,7 @@ Mission Parameters Uploaded.
 Prepare for Interstellar Journey.
 
 Engaging Warp Drive in 
+
 3... 2... 1...
 `;
 
@@ -102,7 +103,7 @@ Engaging Warp Drive in
     if (index < message.length) {
       textContainer.innerHTML += message.charAt(index);
       index++;
-      setTimeout(typeWriter, 55);
+      setTimeout(typeWriter, 60);
     } else {
       // Show the button when typing is complete
       button.style.display = 'inline-block';
