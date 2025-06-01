@@ -43,8 +43,9 @@
     <a href="const.html" class="back-button">Explore Sky</a>
     <a href="const2.html" class="back-button">->Back</a>
   </div>
-
+  
   <div id="explore-panel" class="explore-container hidden">
+    <a href="constellation.html" class="back-button">← Back to Constellation</a>
     <h2 class="panel-title">🧭 Star Sectors</h2>
     <div class="sectors-grid">
       <div class="sector-card">
@@ -73,7 +74,7 @@
         <p>Encrypted records from ancient civilizations found.</p>
       </div>
     </div>
-    <a href="constellation.html" class="back-button">← Back to Constellation</a>
+   
 
   </div>
 
@@ -144,7 +145,10 @@
 
 
 
-
+document.addEventListener('DOMContentLoaded', function() {
+            const panel = document.getElementById('explore-panel');
+            panel.style.scrollBehavior = 'smooth';
+        });
 const signalBtn = document.querySelector('.nav-btn:nth-child(3)'); // 📡 Signals button
 const signalsModal = document.getElementById('signals-modal');
 const closeSignalsBtn = document.getElementById('close-signals');
